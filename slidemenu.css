@@ -18,8 +18,8 @@
   left:0;
 }
 
-.slidemenu-js_content a { color:#CCC; }
-.slidemenu-js_content a:hover { color:#FFF; }
+.slidemenu-js_content > a { color:#CCC; }
+.slidemenu-js_content > a:hover { color:#FFF; }
 
 
 /* toggle button */

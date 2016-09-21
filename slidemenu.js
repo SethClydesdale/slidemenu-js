@@ -1,4 +1,4 @@
-/*! SlideMenu-JS https://github.com/SethClydesdale/slidemenu-js */
+/*! SlideMenu-JS v1.0.0 https://github.com/SethClydesdale/slidemenu-js */
 (function() {
   'use strict';
 

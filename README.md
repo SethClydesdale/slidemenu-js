@@ -6,6 +6,7 @@ What is SlideMenu-JS ? SlideMenu-JS is a constructor for creating side menus in 
 - [Installing SlideMenu-JS](#installing-slidemenu-js)
 - [Using SlideMenu-JS](#using-slidemenu-js)
  - [SlideMenu Configuration](#slidemenu-configuration)
+ - [SlideMenu Methods](#slidemenu-methods)
 
 
 ## SlideMenu-JS Demo
@@ -91,3 +92,93 @@ See the table below for more information on the properties in the button object.
 | **close** | `string` | The close icon for the side menu button. |
 | **tooltip** | `string` | The tooltip for the side menu button. |
 | **offset** | `string` | The offset for the side menu button. It's recommended that you change this for each menu, so that the buttons of different side menus don't overlap each other. Like **size** you can use any CSS measurement. |
+
+These are all the initial configuration options that you can currently set. See the next section for information on the methods provided by the SlideMenu constructor.
+
+### SlideMenu Methods
+If you cached your SlideMenu to a variable, you can utilize some methods which aid you in manipulating the menu. For the porition of this section, we'll be using `myMenu` as our variable.
+```javascript
+var myMenu = new SlideMenu();
+```
+
+**Methods**
+- [addContent()](#addcontentnode-where)
+- [position()](#positionpos)
+- [size()](#sizen)
+- [toggle()](#toggle)
+
+#### addContent(node, where)
+This method is used for adding DOM Nodes or HTML strings to the slide menu's content.
+
+##### Examples
+```javascript
+myMenu.addContent('Hello world', 'end'); // HTML String
+
+// DOM Node
+var p = document.createElement('P');
+p.innerHTML = 'foobar';
+
+myMenu.addContent(p, 'begin');
+```
+
+##### Syntax
+```javascript
+myMenu.addContent(node, where); 
+```
+
+##### Parameters
+| Parameter | type | Description |
+| :-------- | :--- | :---------- |
+| **node** | `string`, `node` | A DOM Node or HTML String that's to be added to the side menu. |
+| **where** | `string` | Determines the insertion point of the DOM Node or HTML String. Valid values are `end` and `begin`. |
+
+
+#### position(pos)
+Changes the position of the slide menu.
+
+##### Examples
+```javascript
+myMenu.position('top');
+myMenu.position('right');
+myMenu.position('bottom');
+myMenu.position('left');
+```
+
+##### Syntax
+```javascript
+myMenu.position(pos);
+```
+
+##### Parameters
+| Parameter | type | Description |
+| :-------- | :--- | :---------- |
+| **pos** | `string` | The position of the side menu. Can be top, right, bottom, or left. |
+
+
+#### size(n)
+Sets the size (height or width ; depends on menu position) of the slide menu.
+
+##### Examples
+```javascript
+myMenu.size('200px');
+myMenu.size('100%');
+```
+
+##### Syntax
+```javascript
+myMenu.size(n);
+```
+
+##### Parameters
+| Parameter | type | Description |
+| :-------- | :--- | :---------- |
+| **n** | `string` | The size of the side menu. Can be any valid CSS measurement. |
+
+
+#### toggle()
+Toggles the state of the side menu ; opens or closes it.
+
+##### Syntax
+```javascript
+myMenu.toggle();
+```

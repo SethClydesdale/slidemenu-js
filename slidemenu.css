@@ -1,0 +1,110 @@
+/* slidemenu and content */
+.slidemenu-js_menu {
+  color:#FFF;
+  font-size:12px;
+  font-family:arial, verdana, sans-serif;
+  background:#333;
+  position:fixed;
+  z-index:99999;
+}
+
+.slidemenu-js_content {
+  padding:3px;
+  overflow:auto;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
+.slidemenu-js_content a { color:#CCC; }
+.slidemenu-js_content a:hover { color:#FFF; }
+
+
+/* toggle button */
+a.slidemenu-js_button {
+  color:#FFF;
+  font-size:20px;
+  font-family:arial, verdana, sans-serif;
+  line-height:30px;
+  text-align:center;
+  text-decoration:none !important;
+  background:#333;
+  height:30px;
+  width:30px;
+  position:fixed;
+  z-index:99999;
+  cursor:pointer;
+  overflow:hidden;
+}
+
+a.slidemenu-js_button img {
+  max-height:30px;
+  max-width:30px;
+}
+
+
+/* smoothness */
+.slidemenu-js_menu, .slidemenu-js_button { transition:250ms; }
+
+
+/* close button */
+a.slidemenu-js_close {
+  color:#FFF;
+  font-size:20px;
+  text-align:center;
+  line-height:30px;
+  position:absolute;
+  top:0;
+  right:0;
+  display:inline-block;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+}
+
+a.slidemenu-js_close:hover { background:#C33; }
+a.slidemenu-js_close + .slidemenu-js_content { top:30px; }
+
+
+/* overlay for opacity option */
+.slidemenu-js_overlay {
+  content:" ";
+  background:#000;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:99998;
+  opacity:0;
+  transition:200ms;
+  visibility:hidden;
+}
+
+
+/* menu positions */
+.slidemenu-js_menu.slidemenu-js_position-top {
+  top:0;
+  right:0;
+  left:0;
+}
+
+.slidemenu-js_menu.slidemenu-js_position-right {
+  top:0;
+  right:0;
+  bottom:0;
+}
+
+.slidemenu-js_menu.slidemenu-js_position-bottom {
+  right:0;
+  bottom:0;
+  left:0;
+}
+
+.slidemenu-js_menu.slidemenu-js_position-left {
+  top:0;
+  bottom:0;
+  left:0;
+}

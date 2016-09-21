@@ -71,7 +71,7 @@
       }
 
       if (typeof node === 'string') {
-        this.content.insertAdjacentHTML(where == 'end' ? 'beforeend' : 'beforebegin', node);
+        this.content.insertAdjacentHTML(where == 'begin' ? 'afterbegin' : 'beforeend', node);
 
       } else if (typeof node === 'object' && node.tagName) {
 

@@ -11,7 +11,7 @@ What is SlideMenu-JS ? SlideMenu-JS is a constructor for creating side menus in 
 
 ## SlideMenu-JS Demo
 
-Before installing SlideMenu-JS, you should see if it has what you're looking for ! You can view a demo of SlideMenu-JS in action by [**clicking here**](https://jsfiddle.net/SethC95/sx4dpa75/). If you like what you see, then feel free to install SlideMenu-JS on your website by reading the next section ! 
+Before installing SlideMenu-JS, you should see if it has what you're looking for ! You can view a demo of SlideMenu-JS in action by [**clicking here**](https://jsfiddle.net/SethC95/sx4dpa75/). If you like what you see, then feel free to install [SlideMenu-JS](https://www.interviewbit.com/javascript-interview-questions) on your website by reading the next section ! 
 
 
 ## Installing SlideMenu-JS
